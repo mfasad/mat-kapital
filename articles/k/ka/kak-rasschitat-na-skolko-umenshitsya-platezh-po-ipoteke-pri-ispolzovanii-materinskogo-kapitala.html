@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>👶</text></svg>">
+    <title>Расчет ипотеки с маткапиталом: формула уменьшения платежа — Материнский капитал</title>
+    <meta name="description" content="Подробный расчет уменьшения ипотечного платежа при погашении материнским капиталом. Формулы, примеры и нюансы аннуитетных схем.">
+    <link rel="canonical" href="https://mat-kapital.vercel.app/articles/k/ka/kak-rasschitat-na-skolko-umenshitsya-platezh-po-ipoteke-pri-ispolzovanii-materinskogo-kapitala.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Расчет ипотеки с маткапиталом: формула уменьшения платежа">
+    <meta property="og:description" content="Подробный расчет уменьшения ипотечного платежа при погашении материнским капиталом. Формулы, примеры и нюансы аннуитетных схем.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1778330026">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">👶</span>
+                <span class="pb-logo-text">Материнский капитал</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/oformlenie/">📝 Оформление</a>
+<a href="/category/pokupka-zhilya/">🏠 Покупка жилья</a>
+<a href="/category/ipoteka/" class="pb-nav-active">🏦 Ипотека</a>
+<a href="/category/stroitelstvo/">🏗️ Строительство</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/oformlenie/" class="pb-dropdown-item">📝 Оформление</a>
+<a href="/category/pokupka-zhilya/" class="pb-dropdown-item">🏠 Покупка жилья</a>
+<a href="/category/ipoteka/" class="pb-dropdown-item">🏦 Ипотека</a>
+<a href="/category/stroitelstvo/" class="pb-dropdown-item">🏗️ Строительство</a>
+<a href="/category/ezhemesyachnye/" class="pb-dropdown-item">💸 Ежемесячные</a>
+<a href="/category/dokumenty/" class="pb-dropdown-item">📂 Документы</a>
+<a href="/category/dvojnya-i-3-j/" class="pb-dropdown-item">👨‍👩‍👧‍👦 Двойня и 3-й</a>
+<a href="/category/regionalnyj/" class="pb-dropdown-item">🗺️ Региональный</a>
+<a href="/category/prodazha-zhilya/" class="pb-dropdown-item">🔑 Продажа жилья</a>
+<a href="/category/obrazovanie/" class="pb-dropdown-item">🎓 Образование</a>
+<a href="/category/voprosy-i-otvety/" class="pb-dropdown-item">❓ Вопросы и ответы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/ipoteka/">Ипотека</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Расчет ипотеки с маткапиталом: формула уменьшения платежа</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#механизм-частичного-досрочного-погашения">Механизм частичного досрочного погашения</a></li><li><a href="#математика-аннуитетного-платежа">Математика аннуитетного платежа</a></li><li><a href="#пошаговая-инструкция-по-оформлению">Пошаговая инструкция по оформлению</a></li><li><a href="#примеры-расчетов-и-сравнение-вариантов">Примеры расчетов и сравнение вариантов</a></li><li><a href="#нюансы-рефинансирования-и-госпрограмм">Нюансы рефинансирования и госпрограмм</a></li><li><a href="#частые-ошибки-заемщиков">Частые ошибки заемщиков</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-oformit-ipoteku-pod-materinskij-kapital-v-dekretnom-otpuske.html">Ипотека под материнский капитал в декрете: пошаговая инструкция</a></li><li><a href="/articles/g/gd/gde-vygodnee-vzyat-ipoteku-pod-materinskij-kapital.html">Ипотека под маткапитал: какой банк выгоднее в 2026</a></li><li><a href="/articles/k/ku/kuda-nesti-materinskij-kapital-dlya-pogasheniya-ipoteki.html">Куда нести материнский капитал для погашения ипотеки</a></li><li><a href="/articles/k/ka/kak-ispolzovat-sertifikat-materinskogo-kapitala-dlya-pogasheniya-ipoteki.html">Как использовать маткапитал на ипотеку: пошаговая инструкция 2026</a></li><li><a href="/articles/c/ch/chto-takoe-kooperativ-materinskij-kapital-na-pokupku-doma.html">Кооператив материнского капитала: покупка дома без ипотеки</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как рассчитать снижение платежа по ипотеке с материнским капиталом</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#механизм-частичного-досрочного-погашения">Механизм частичного досрочного погашения</a></li><li><a href="#математика-аннуитетного-платежа">Математика аннуитетного платежа</a></li><li><a href="#пошаговая-инструкция-по-оформлению">Пошаговая инструкция по оформлению</a></li><li><a href="#примеры-расчетов-и-сравнение-вариантов">Примеры расчетов и сравнение вариантов</a></li><li><a href="#нюансы-рефинансирования-и-госпрограмм">Нюансы рефинансирования и госпрограмм</a></li><li><a href="#частые-ошибки-заемщиков">Частые ошибки заемщиков</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Использование средств семейного капитала для погашения ипотечного кредита является одним из самых популярных способов поддержки молодых семей в России. Однако многие заемщики ошибочно полагают, что внесение всей суммы сразу же и в полном объеме снижает ежемесячный взнос. Реальность такова, что механизм перерасчета зависит от выбранной вами стратегии взаимодействия с банком и условий кредитного договора.</p>
+
+<p>В момент обращения в кредитную организацию с заявлением о досрочном погашении за счет <strong>материнского капитала</strong>, перед вами встанет выбор: сократить срок кредита или уменьшить размер платежа. Второй вариант чаще всего выбирают те, кто испытывает нагрузку на семейный бюджет прямо сейчас. Понимание математики процесса позволит вам точно прогнозировать свои расходы на годы вперед.</p>
+
+<p>В этой статье мы разберем, как именно происходит пересчет графика платежей, какие факторы влияют на итоговую сумму и почему банк может предложить вам не самые выгодные условия без вашего активного участия. Вы узнаете, как правильно составить заявление и на что обратить внимание при получении нового графика.</p>
+
+<h2 id="механизм-частичного-досрочного-погашения">Механизм частичного досрочного погашения</h2>
+
+<p>Процесс внесения средств материнского капитала технически оформляется как частичное досрочное погашение. Когда Пенсионный фонд (СФР) переводит деньги на счет банка, происходит уменьшение основного тела долга (основной задолженности). Именно с этой оставшейся суммы в дальнейшем начисляются проценты.</p>
+
+<p>Ключевым моментом здесь является дата списания средств. Проценты в ипотеке обычно начисляются на фактический остаток долга за каждый день пользования кредитом. Поэтому, если перевод <em>СФР</em> задержится или поступит в середине расчетного периода, перерасчет произойдет только с момента фактического зачисления денег на ссудный счет.</p>
+
+<p>Важно понимать, что автоматического снижения платежа не произойдет. Банк ждет вашего письменного заявления, в котором вы должны четко указать свое желание изменить параметры кредита. Без этого документа внесенная сумма просто ляжет на счет для будущего полного пог-ашения в дату окончания срока, а ежемесячный взнос останется прежним.</p>
+
+<details class="pb-accordion"><summary>Когда происходит перерасчет?</summary><div class="pb-accordion-body"><p>Перерасчет графика платежей производится не в день подачи заявления, а в дату фактического поступления средств от СФР на счет банка. Обычно это занимает от 10 до 14 рабочих дней после одобрения заявки в фонде.</p></div></details>
+
+<p>Существует два основных сценария развития событий после зачисления средств:</p>
+<ul>
+<li>📉 <strong>Снижение платежа:</strong> Срок кредита остается прежним, но ежемесяная сумма взноса уменьшается пропорционально остатку долга.</li>
+<li>📅 <strong>Сокращение срока:</strong> Сумма платежа остается той же, но уменьшается количество оставшихся месяцев до полной выплаты.</li>
+</ul>
+
+<h2 id="математика-аннуитетного-платежа">Математика аннуитетного платежа</h2>
+
+<p>Большинство ипотечных кредитов в России выдаются с использованием аннуитетной схемы платежей. Это означает, что вы вносите одинаковую сумму каждый месяц на протяжении всего срока, но соотношение основного долга и процентов внутри этого платежа постоянно меняется. В начале срока вы платите в основном проценты, а к концу — тело кредита.</p>
+
+<p>Формула расчета аннуитетного платежа выглядит следующим образом: <code>P = S <em> (i </em> (1 + i)^n) / ((1 + i)^n - 1)</code>, где <strong>P</strong> — ежемесячный платеж, <strong>S</strong> — остаток суммы кредита, <strong>i</strong> — месячная процентная ставка, <strong>n</strong> — количество оставшихся месяцев. При внесении материнского капитала переменная <strong>S</strong> уменьшается, что при сохранении <strong>n</strong> ведет к снижению <strong>P</strong>.</p>
+
+<p>Многие заемщики удивляются, увидев, что платеж уменьшился не так сильно, как они ожидали. Это связано с тем, что на момент внесения капитала значительную часть вашего взноса составляли проценты, которые "съедают" часть вносимой суммы. Только часть материнского капитала пойдет на погашение тела долга, если вы вноситесь в середине срока.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Используйте онлайн-калькуляторы с функцией "частичное погашение", чтобы увидеть точную сумму нового платежа. Стандартные калькуляторы ипотеки часто не учитывают дату внесения дополнительных средств.</p></aside>
+
+<p>Рассмотрим влияние ставки на структуру платежа. Чем выше процентная ставка по вашему договору, тем меньший эффект снижения ежемесячного взноса вы получите при фиксированной сумме внесения. Это происходит из-за высокой доли начисляемых процентов в общей структуре аннуитета.</p>
+
+<h2 id="пошаговая-инструкция-по-оформлению">Пошаговая инструкция по оформлению</h2>
+
+<p>Для того чтобы запустить процесс перерасчета, необходимо выполнить ряд последовательных действий. Ошибка на любом из этапов может привести к задержке или некорректному применению средств. В первую очередь убедитесь, что у вас на руках есть сертификат или выписка об остатке средств из личного кабинета <em>Госуслуг</em>.</p>
+
+<p>Далее вам нужно обратиться в банк. Некоторые кредитные организации позволяют подать заявление на частичное погашение через мобильное приложение, другие требуют личного визита в офис. В заявлении обязательно укажите, что источником средств является материнский капитал, и выберите опцию уменьшения платежа.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Документы для банка</h4><label class="check-item"><input type="checkbox"><span>Паспорт заемщика (всех созаемщиков)</span></label><label class="check-item"><input type="checkbox"><span>Кредитный договор</span></label><label class="check-item"><input type="checkbox"><span>Сертификат на маткапитал или выписка из СФР</span></label><label class="check-item"><input type="checkbox"><span>Заявление на частичное погашение</span></label><label class="check-item"><input type="checkbox"><span>Справка об остатке средств маткапитала</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<p>После подачи заявления в банк вам необходимо подать аналогичное заявление в Социальный фонд России (ранее ПФР). Это можно сделать через МФЦ или портал <em>Госуслуг</em>. В заявлении укажите реквизиты банка и цель использования средств — погашение основного долга по ипотеке.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Не подавайте заявление в банк раньше, чем получите подтверждение от СФР о принятии документов. Если банк запросит деньги, а фонд откажет в переводе из-за ошибки в документах, возникнет техническая задолженность.</p>
+</blockquote>
+
+<p>Сроки рассмотрения заявки в СФР составляют до 10 рабочих дней, после чего еще до 5 дней требуется на перечисление средств. Только после поступления денег на корреспондентский счет банка происходит перерасчет. Новый график платежей вам должны предоставить в течение 3-5 дней после этой даты.</p>
+
+<h2 id="примеры-расчетов-и-сравнение-вариантов">Примеры расчетов и сравнение вариантов</h2>
+
+<p>Чтобы наглядно продемонстрировать разницу, рассмотрим конкретный числовой пример. Предположим, что вы взяли кредит на 5 миллионов рублей под 12% годовых на 20 лет. Прошло 3 года, и вы решили внести 600 тысяч рублей материнского капитала.</p>
+
+<p>На момент внесения остаток долга составлял примерно 4.6 миллиона рублей. Без внесения дополнительных средств ваш платеж оставался бы на уровне около 55 тысяч рублей. После внесения 600 тысяч рублей и выбора опции сокращения платежа, сумма ежемесячного взноса снизится.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Параметр</th>
+<th>До внесения 600 т.р.</th>
+<th>После внесения (срок сохранен)</th>
+<th>После внесения (платеж сохранен)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Остаток долга</td>
+<td>4 600 000 руб.</td>
+<td>4 000 000 руб.</td>
+<td>4 000 000 руб.</td>
+</tr>
+<tr>
+<td>Ежемесячный платеж</td>
+<td>55 000 руб.</td>
+<td>47 800 руб.</td>
+<td>55 000 руб.</td>
+</tr>
+<tr>
+<td>Оставшийся срок</td>
+<td>17 лет</td>
+<td>17 лет</td>
+<td>14 лет 2 месяца</td>
+</tr>
+<tr>
+<td>Экономия на процентах</td>
+<td>-</td>
+<td>~1.2 млн руб.</td>
+<td>~2.5 млн руб.</td>
+</tr>
+</tbody>
+</table></div>
+
+<div class="pb-poll" id="poll-a5c4202a"><div class="pb-poll-question">📊 Что вы выберете при внесении маткапитала?</div><div class="pb-poll-option" data-poll="a5c4202a" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Снизить платеж</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="a5c4202a" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Сократить срок</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="a5c4202a" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Разделю сумму 50/50</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="a5c4202a" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Пока не решил(а)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<p>Как видно из таблицы, сокращение срока дает гораздо большую финансовую выгоду в долгосроке, так как вы меньше времени пользуетесь borrowed money. Однако снижение платежа дает immediate relief для бюджета, что для многих семей важнее.</p>
+
+<h2 id="нюансы-рефинансирования-и-госпрограмм">Нюансы рефинансирования и госпрограмм</h2>
+
+<p>Ситуация осложняется, если ваша ипотека оформлена по льготной программе, например, <em>Семейная ипотека</em> или <em>Дальневосточная ипотека</em>. В таких случаях использование материнского капитала может иметь свои особенности, прописанные в кредитном договоре с банком-агентом.</p>
+
+<p>Некоторые банки при рефинансировании ипотеки с использованием маткапитала требуют обязательного выделения долей детям. Если вы планируете в будущем рефинансировать кредит в другой банк под более низкий процент, наличие незавершенного обязательства по выделению долей (из-за использования капитала) может стать препятствием.</p>
+
+<p>Также стоит учитывать возможность использования средств на уплату первоначального взноса. В этом случае расчет уменьшения платежа производится сразу при выдаче кредита, и вы изначально получаете меньший ежемесячный взнос. Это часто выгоднее, чем вносить капитал в середине срока, так как проценты не успевают "набежать" на эту сумму.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> При рефинансировании ипотеки, где использовался материнский капитал, новый банк может потребовать справку из органов опеки о том, что права детей не нарушены. Это может затянуть процесс одобрения.</p>
+</blockquote>
+
+<p>Важно внимательно читать договор о рефинансировании. Там может быть пункт о том, что при смене кредитора необходимо сразу погасить часть долга за счет собственных средств, если материнский капитал был использован для снижения ставки, но не для погашения тела.</p>
+
+<h2 id="частые-ошибки-заемщиков">Частые ошибки заемщиков</h2>
+
+<p>Одной из самых распространенных ошибок является несвоевременная подача заявления. Заемчики вносят деньги на счет, думая, что платеж уменьшится автоматически. В результате в дату платежа списывается полная сумма, а "лишние" деньги зависают на счете как переплата, не уменьшая тело долга для расчета процентов.</p>
+
+<p>Другая ошибка — неправильный расчет суммы. Материнский капитал индексируется, и суммы меняются ежегодно. В заявлении в банк нужно указывать точную сумму, которую вы планируете внести, основываясь на актуальной справке из СФР, а не на данных прошлого года.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Главная ошибка — думать, что банк сам заинтересован в снижении вашей переплаты. Банку выгоднее, чтобы вы платили дольше, поэтому инициатива по оптимизации графика должна исходить строго от вас.</p></aside>
+
+<p>Не стоит забывать и о налоговом вычете. При использовании материнского капитала для погашения ипотеки, сумма, по которой можно получить имущественный вычет, уменьшается на размер использованного капитала. Это касается вычета за покупку жилья и за уплаченные проценты.</p>
+
+<p>Некоторые заемщики пытаются внести капитал частями, если сумма кредита небольшая. Технически это возможно, но требует multiple заявлений и согласований, что увеличивает бюрократическую нагрузку. Лучше вносить всю доступную сумму единовременно.</p>
+
+<details>
+<summary>Можно ли использовать маткапитал для погашения процентов, а не тела кредита?</summary>
+<p>По законодательству средства материнского капитала направляются на погашение основного долга и процентов по кредиту. Однако банки обычно применяют поступившую сумму в первую очередь на погашение основного долга, так как это снижает риски невозврата. Напрямую выбрать "только проценты" в стандартной процедуре нельзя.</p>
+</details>
+
+<details>
+<summary>Влияет ли снижение платежа на возможность получения потребительских кредитов?</summary>
+<p>Да, влияет положительно. Снижение ежемесячной нагрузки по ипотеке улучшает ваш показатель долговой нагрузки (ПДН). Банки при рассмотрении новых заявок видят меньший обязательный платеж, что повышает вашу кредитоспособность для других целей.</p>
+</details>
+
+<details>
+<summary>Что делать, если банк отказывает в изменении графика?</summary>
+<p>Отказ в изменении графика при частичном погашении незаконен, если это предусмотрено договором. Если банк утверждает, что "так нельзя", требуйте письменный отказ с ссылкой на пункт договора. Обычно после упоминания жалобы в ЦБ РФ вопрос решается быстро.</p>
+</details>
+
+<details>
+<summary>Нужно ли заново оформлять страховку после снижения суммы кредита?</summary>
+<p>Страховая сумма обычно привязана к остатку основного долга. После внесения материнского капитала и перерасчета долга, вы имеете право потребовать перерасчета страховой премии. Это позволит ежегодно экономить на взносах по страхованию жизни и имущества.</p>
+</details>
+
+<details>
+<summary>Можно ли вернуть часть маткапитала, если сделка сорвалась?</summary>
+<p>Если сделка по покупке жилья, для которой использовался маткапитал, сорвалась или была признана недействительной, средства должны быть возвращены на счет СФР. Использовать их повторно на другую ипотеку можно будет только после возврата и получения нового разрешения.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-oformit-ipoteku-pod-materinskij-kapital-v-dekretnom-otpuske.html" class="pb-related-card">
+                <span class="pb-related-title">Ипотека под материнский капитал в декрете: пошаговая инструкция</span>
+                <span class="pb-related-desc">Как взять ипотеку в декретном отпуске, используя маткапитал. Требования банков, расчет дохода и спис</span>
+            </a><a href="/articles/g/gd/gde-vygodnee-vzyat-ipoteku-pod-materinskij-kapital.html" class="pb-related-card">
+                <span class="pb-related-title">Ипотека под маткапитал: какой банк выгоднее в 2026</span>
+                <span class="pb-related-desc">Где выгоднее взять ипотеку под материнский капитал в 2026 году. Сравнение ставок, условий использова</span>
+            </a><a href="/articles/k/ku/kuda-nesti-materinskij-kapital-dlya-pogasheniya-ipoteki.html" class="pb-related-card">
+                <span class="pb-related-title">Куда нести материнский капитал для погашения ипотеки</span>
+                <span class="pb-related-desc">Полная инструкция: куда подавать документы на погашение ипотеки материнским капиталом. Сроки, список</span>
+            </a><a href="/articles/k/ka/kak-ispolzovat-sertifikat-materinskogo-kapitala-dlya-pogasheniya-ipoteki.html" class="pb-related-card">
+                <span class="pb-related-title">Как использовать маткапитал на ипотеку: пошаговая инструкция 2026</span>
+                <span class="pb-related-desc">Полный гид: как погасить ипотеку материнским капиталом в 2026 году. Сроки, документы, порядок действ</span>
+            </a><a href="/articles/c/ch/chto-takoe-kooperativ-materinskij-kapital-na-pokupku-doma.html" class="pb-related-card">
+                <span class="pb-related-title">Кооператив материнского капитала: покупка дома без ипотеки</span>
+                <span class="pb-related-desc">Как купить дом через кооператив под материнский капитал. Условия, риски, пошаговая инструкция и отли</span>
+            </a><a href="/articles/v/v-/v-kakoj-srok-pfr-perechislyaet-materinskij-kapital-banku-za-ipoteku.html" class="pb-related-card">
+                <span class="pb-related-title">Сроки перечисления материнского капитала в банк: когда ждать деньги</span>
+                <span class="pb-related-desc">Узнайте точные сроки перечисления материнского капитала банку для ипотеки в 2026 году. Разбор этапов</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">👶 Материнский капитал</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/oformlenie/">📝 Оформление</a> · <a href="/category/pokupka-zhilya/">🏠 Покупка жилья</a> · <a href="/category/ipoteka/">🏦 Ипотека</a> · <a href="/category/stroitelstvo/">🏗️ Строительство</a> · <a href="/category/ezhemesyachnye/">💸 Ежемесячные</a> · <a href="/category/dokumenty/">📂 Документы</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Материнский капитал. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>
